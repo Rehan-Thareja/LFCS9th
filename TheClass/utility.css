@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+.flex{
+    display:flex;
+    justify-content: center;
+    align-tracks: center;
+}
+.Borel{
+    font-family:'Borel';
+}
+.cursive{
+    font-family: 'Charmonman';
+}
+.white{
+    color:white;
+}
+
+.bg-black{
+    background-color:rgb(24, 24, 24);
+}
+.m-5{
+    margin:5px;
+}
+/* General Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 19px; /* Width of the scrollbar */
+    height: 12px; /* Height of the scrollbar on horizontal scroll */
+  }
+  
+  /* Scrollbar Track */
+  ::-webkit-scrollbar-track {
+    background: black; /* Black background */
+    border: 2px solid #333; /* Darker grey border around the track */
+    animation: trackAnimation 1s ease-out; /* Animation for track */
+  }
+  
+  /* Scrollbar Thumb */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(92, 92, 92); /* Grey color for the thumb */
+    border: 2px solid #333; /* Darker grey border around the thumb */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect for better visibility */
+    transition: background 0.3s ease; /* Smooth transition for thumb color */
+    animation: thumbAnimation 1s ease-out; /* Animation for thumb */
+    border-radius: 7px;;
+  }
+  
+  /* Scrollbar Thumb on Hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666; /* Lighter grey on hover */
+  }
+  
+  /* Animation for Scrollbar Track */
+  @keyframes trackAnimation {
+    0% { background-color: #222; }
+    100% { background-color: black; }
+  }
+  
+  /* Animation for Scrollbar Thumb */
+  @keyframes thumbAnimation {
+    0% { background-color: #555; }
+    100% { background-color: grey; }
+  }
+  
+  /* Optional: Scrollbar Button (for arrow buttons) */
+  ::-webkit-scrollbar-button {
+    background-color: transparent;
+    display: none; /* Hide buttons, optional */
+  }
+  
+.roboto{
+    font-family:'roboto';
+}
+.poppins{
+    font-family:'poppins';
+    margin-top:55px;
+}
+.flex-evenly{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.font-s{
+  font-size:40px;
+  color:white;
+}

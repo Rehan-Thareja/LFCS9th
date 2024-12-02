@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" viewBox="0 0 200 200">
+  <!-- White Circle with White Background -->
+  <circle cx="100" cy="100" r="90" fill="white"/>
+  
+  <!-- Black "T" and "C" Letters Merged and Centered -->
+  <text x="45" y="135" font-family="Arial, sans-serif" font-size="100" fill="black" font-weight="bold">T</text>
+  <text x="80" y="135" font-family="Arial, sans-serif" font-size="100" fill="black" font-weight="bold">C</text>
+</svg>

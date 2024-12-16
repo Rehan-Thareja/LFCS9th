@@ -12,7 +12,7 @@
     <title>The Class</title>
 </head>
 <body>
-    <div class="flex"> 
+        <div class="flex"> 
         <div class="bg-black second-body m-5">
             <div class="nav roboto white m-5">
                 <img src="logo.svg" alt="logo" class="logo">
@@ -23,8 +23,71 @@
                     <a href="Trip.html" class="roboto">Trip</a>
                 </div>
             </div>
+            <div class="flexcoursel">
+
+                <div class="carousel" id="carousel1">
+                    <div class="carousel-track">
+                        <img src="img1c.jpg" alt="Image 1" >
+                        <img src="img2c.jpg" alt="Image 2" >
+                        <img src="img3c.jpg" alt="Image 3" >
+                        <img src="img4c.jpg" alt="Image 4" >
+                        <img src="img5c.jpg" alt="Image 5" >
+                        <img src="img6c.jpg" alt="Image 6" >
+                        <img src="img7c.jpg" alt="Image 7" >
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="prev">&#9664;</button>
+                        <button class="next">&#9654;</button>
+                    </div>
+                </div>
+                
+                <div class="carousel" id="carousel2">
+                    <div class="carousel-track">
+                        <img src="img8c.jpg" alt="Image 1" >
+                        <img src="img9c.jpg" alt="Image 2" >
+                        <img src="img10c.jpg" alt="Image 3" >
+                        <img src="img11c.jpg" alt="Image 4" >
+                        <img src="img12c.jpg" alt="Image 5" >
+                        <img src="img13c.jpg" alt="Image 6" >
+                        <img src="img14c.jpg" alt="Image 7" >
+                    </div>
+                    <div class="carousel-buttons">
+                        <button class="prev">&#9664;</button>
+                        <button class="next">&#9654;</button>
+                    </div>
+                </div>
+            </div>
+        
+            <script>
+                function initializeCarousel(carouselId) {
+                    const carousel = document.getElementById(carouselId);
+                    const track = carousel.querySelector('.carousel-track');
+                    const images = track.children;
+                    const prevButton = carousel.querySelector('.prev');
+                    const nextButton = carousel.querySelector('.next');
+        
+                    let index = 0;
+        
+                    function updateCarousel() {
+                        const imageWidth = images[0].clientWidth;
+                        track.style.transform = `translateX(-${index * imageWidth}px)`;
+                    }
+        
+                    prevButton.addEventListener('click', () => {
+                        index = (index > 0) ? index - 1 : images.length - 1;
+                        updateCarousel();
+                    });
+        
+                    nextButton.addEventListener('click', () => {
+                        index = (index < images.length - 1) ? index + 1 : 0;
+                        updateCarousel();
+                    });
+                }
+        
+                initializeCarousel('carousel1');
+                initializeCarousel('carousel2');
+            </script>
         </div>
     </div>
-    <script></script>
 </body>
 </html>

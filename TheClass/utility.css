@@ -4,6 +4,10 @@
     justify-content: center;
     align-tracks: center;
 }
+.p{
+  font-family: 'poppins';
+  margin-left:20px;
+}
 .Borel{
     font-family:'Borel';
 }

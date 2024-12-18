@@ -1,5 +1,5 @@
 // For Sukhdeep
-let sukdeep = document.getElementById('sukdeep');
+let sukdeep = document.getElementById('sukhdeep');
 sukhdeep.addEventListener('click', function() {
     window.location.href = 'sukdeep.html';
 });

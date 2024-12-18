@@ -1,7 +1,7 @@
 // For Sukhdeep
 let sukdeep = document.getElementById('sukhdeep');
 sukhdeep.addEventListener('click', function() {
-    window.location.href = 'sukdeep.html';
+    window.location.href = 'sukhdeep.html';
 });
 // For Rehan
 let rehan = document.getElementById('rehan');

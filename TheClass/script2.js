@@ -1,3 +1,8 @@
+// For Sukhdeep
+let sukdeep = document.getElementById('sukdeep');
+sukhdeep.addEventListener('click', function() {
+    window.location.href = 'sukdeep.html';
+});
 // For Rehan
 let rehan = document.getElementById('rehan');
 rehan.addEventListener('click', function() {
